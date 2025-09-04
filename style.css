@@ -277,6 +277,106 @@ a {
   color: black;
 }
 
+/* DETAIL */
+
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.product img {
+  max-width: 400px;
+  margin-top: 9rem;
+  padding: 5rem;
+}
+
+.details {
+  max-width: 400px;
+}
+
+h3 {
+  font-size: 3rem;
+  margin-top: 12rem;
+}
+
+.price {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.size-options button {
+  background: #d4c1a5;
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.quantity button {
+  background: #d4c1a5;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 0 5px;
+}
+
+.quantity span {
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.actions button {
+  background: #d4c1a5;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.description {
+  margin-top: 40px;
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+
+.description h2 {
+  font-size: 24px;
+  text-transform: lowercase;
+}
+
+.description p {
+  line-height: 1.5;
+}
+
 /* FOOTER */
 
 footer {
@@ -323,3 +423,5 @@ footer .address {
   align-items: center;
   gap: 8px;
 }
+
+
