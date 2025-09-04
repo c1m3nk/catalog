@@ -1,118 +1,120 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-    /* navbar */
+
+/* navbar */
 nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 20px;
-    background-color: #948979;
-    height: 100px;
-    align-items: center;
-    position:fixed ;
-    width: 100%;
-    z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #948979;
+  height: 100px;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 
 nav .element {
-    width: 20%;
+  width: 20%;
 }
 
-nav .element ul{
-    display: flex;
-    justify-content: space-around;
+nav .element ul {
+  display: flex;
+  justify-content: space-around;
 }
 
 nav .element ul li {
-    list-style: none;
+  list-style: none;
 }
 
 nav .element ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
 }
 
 nav .title h1 {
-    font-size: 2em;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 10px;
-    color:white;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 10px;
+  color: white;
 }
 
 .icon {
-    display: flex;
-    justify-content: space-around;
-    width: 15%;
-    font-size: 1.5em;
-    color:white;
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+  font-size: 1.5em;
+  color: white;
 }
-      /* LANDING PAGE */
+
+/* LANDING PAGE */
 .hiro {
-    background-color: #DFD0B8;
-    display: flex;              
-    align-items: center;         
-    gap: 3rem;                   
-    padding: 3rem 5rem;
-    height: 40rem;  
+  background-color: #DFD0B8;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem 5rem;
+  height: 40rem;
 }
 
 .hiro img {
-    position: relative;
-    width: 30rem;
-    top: 5rem;     
+  position: relative;
+  width: 30rem;
+  top: 5rem;
 }
 
 .hiro-text {
-    max-width:600px;           
+  max-width: 600px;
 }
 
 .hiro-text h2 {
-    font-size: 3em;
-    font-weight: 500;
-    margin-bottom: 2rem;
-    color: black;
-    margin-left: 3rem;
-    margin-top: -3rem;
+  font-size: 3em;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: black;
+  margin-left: 3rem;
+  margin-top: -3rem;
 }
 
 .hiro-text p {
-    font-size:1.6em;
-    line-height: 1.2;
-    color: black;
-    margin-left: 4rem;
+  font-size: 1.6em;
+  line-height: 1.2;
+  color: black;
+  margin-left: 4rem;
 }
 
 .section {
   display: flex;
-  align-items: center;      
-  gap: 3rem;              
+  align-items: center;
+  gap: 3rem;
   padding: 3rem 5rem;
 }
 
 .img-box {
-  position: relative;       
-  width: 350px;            
+  position: relative;
+  width: 350px;
   height: 350px;
 }
 
 .img-box img {
   width: 100%;
   position: relative;
-  z-index: 2;               
+  z-index: 2;
 }
 
 .bg-box {
   position: absolute;
-  bottom: -40px;           
-  left: 70px;              
+  bottom: -40px;
+  left: 70px;
   width: 100%;
   height: 100%;
   background-color: #DFD0B8;
-  z-index: 1;               
+  z-index: 1;
 }
 
 .text-box {
@@ -132,27 +134,32 @@ nav .title h1 {
   text-align: center;
   padding: 3rem;
 }
+
 .trend h3 {
   margin-bottom: 5rem;
   margin-top: 3rem;
   font-weight: bold;
   font-size: 2.5rem;
 }
+
 .trend-items {
   display: flex;
   justify-content: center;
   gap: 2rem;
   margin-bottom: 1.5rem;
 }
+
 .trend-items .item img {
   width: 20rem;
   height: 20rem;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
 }
+
 .trend-items .item p {
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
+
 .trend .more {
   text-decoration: none;
   font-size: 1.2rem;
@@ -168,18 +175,22 @@ nav .title h1 {
   padding: 2rem 4rem;
   gap: 2rem;
 }
+
 .highlight-img img {
   width: 300px;
 }
+
 .highlight-text h2 {
   font-size: 2rem;
   margin-bottom: 1.8rem;
 }
+
 .highlight-text p {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 2rem;
 }
+
 .highlight-text .detail {
   text-decoration: none;
   font-weight: bold;
@@ -187,127 +198,128 @@ nav .title h1 {
 
 }
 
-    /* SHALL */
-    
+/* SHALL */
+
 .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
 
-    h2 {
-      text-align: center;
-      margin-bottom: 40px;
-    }
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 30px;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
 
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      text-align: center;
-      padding: 15px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      position: relative;
-      margin: 2rem;
-      transition: transform 0.3s;
-      
-    }
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin: 2rem;
+  transition: transform 0.3s;
 
-    .card:hover{
-      transform: translateY(-1rem);
-    }
+}
 
-    .card img {
-      width: 100%;
-      border-radius: 12px;
-    }
+.card:hover {
+  transform: translateY(-1rem);
+}
 
-    .discount-tag {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      background: #1F2544;
-      color: #fff;
-      font-size: 12px;
-      padding: 5px 10px;
-      border-radius: 8px;
-    }
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
 
-    .product-title {
-      font-size: 18px;
-      margin: 15px 0 5px;
-      font-weight: bold;
-      text-decoration: none;
+.discount-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #1F2544;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
 
-    }
+.product-title {
+  font-size: 18px;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  text-decoration: none;
+
+}
 
 
-    .price {
-      font-size: 16px;
-      font-weight: bold;
-      color: #1F2544;
-    }
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1F2544;
+}
 
-    .old-price {
-      font-size: 14px;
-      color: #aaa;
-      text-decoration: line-through;
-      margin-left: 10px;
-    }
+.old-price {
+  font-size: 14px;
+  color: #aaa;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
 
-    a {
-      text-decoration: none;
-      color: black;
-    }
+a {
+  text-decoration: none;
+  color: black;
+}
 
 /* FOOTER */
 
 footer {
-      background-color: #948979; /* warna coklat abu abu */
-      color: white;
-      padding: 20px 50px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+  background-color: #948979;
+  /* warna coklat abu abu */
+  color: white;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-    footer .brand {
-    font-size: 2em;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 10px;
-    color:white;
-    }
+footer .brand {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 10px;
+  color: white;
+}
 
-    footer .social {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+footer .social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-    footer .social a {
-      color: white;
-      text-decoration: none;
-      font-size: 15px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+footer .social a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-    footer .social a:hover {
-      text-decoration:none;
-    }
+footer .social a:hover {
+  text-decoration: none;
+}
 
-    footer .address {
-      font-size: 15px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
+footer .address {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
