@@ -16,11 +16,11 @@
     <a href="detail.html">
       <div class="trend-items">
         <div class="item">
-          <img src="img/polo.jpeg" alt="basic tee">
+          <img src="img/polo1.png" alt="basic tee">
           <p>polo shirt </p>
         </div>
         <div class="item">
-          <img src="img/cargo.jpeg" alt="cargo pants">
+          <img src="img/cargo.png" alt="cargo pants">
           <p>cargo pants</p>
         </div>
         <div class="item">
@@ -35,7 +35,7 @@
 
   <section class="highlight">
     <div class="highlight-img">
-      <img src="img/bg bawah.jpeg" alt="basic tee">
+      <img src="img/bg bawah.png" alt="basic tee">
     </div>
     <div class="highlight-text">
       <h2>Basic Tee – Simpel, Nyaman, Wajib Punya</h2>
