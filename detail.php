@@ -6,11 +6,11 @@
 <?php include "component/navbar.php"?>
 
     <?php 
-    $page = (isset($_GET['page'])) ? $_GET['page'] : "home";
-    if ($page == "home") {
-        include "page/home.php";
-    } elseif ($page == "detail") {
+    $page = (isset($_GET['page'])) ? $_GET['page'] : "detail";
+    if ($page == "detail") {
         include "page/detail.php";
+    } elseif ($page == "home") {
+        include "page/home.php";
     } elseif ($page == "shall") {
         include "page/shall.php";
     } else {

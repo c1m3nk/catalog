@@ -13,7 +13,7 @@
 
   <section class="trend">
     <h3>TREND</h3>
-    <a href="detail.html">
+    <a href="detail.php">
       <div class="trend-items">
         <div class="item">
           <img src="img/polo1.png" alt="basic tee">
@@ -30,7 +30,7 @@
       </div>
     </a>
 
-    <a href="shall.html" class="more">show more</a>
+    <a href="shall.php" class="more">show more</a>
   </section>
 
   <section class="highlight">
@@ -45,7 +45,7 @@
         Cocok buat nongkrong, hangout, atau sekadar gaya santai di rumah.
         Pilihan warna netral bikin lo tetap stylish tanpa harus ribet.
       </p>
-      <a href="detail.html" class="detail">show detail</a>
+      <a href="detail.php" class="detail">show detail</a>
     </div>
   </section>
 

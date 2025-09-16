@@ -13,7 +13,7 @@
             </div>
             </a>
            
-            <a href="detail.html">
+            <a href="detail.php">
                 <div class="card">
                     <img src="img/polo1.png" alt="Kaos Polo">
                     <div class="product-title">Kaos Polo</div>
@@ -23,7 +23,7 @@
                 </div>
             </a>
 
-            <a href="detail.html">
+            <a href="detail.php">
                  <div class="card">
                 <span class="discount-tag">Upto 30%</span>
                 <img src="img/polo2.png" alt="Kaos Polo">
@@ -35,7 +35,7 @@
             </div>
             </a>
 
-            <a href="detail.html">
+            <a href="detail.php">
                 <div class="card">
                     <img src="img/polo1.png" alt="Kaos Polo">
                     <div class="product-title">Kaos Polo</div>
@@ -44,7 +44,7 @@
                     </div>
                 </div>
             </a>
-            <a href="detail.html">
+            <a href="detail.php">
                  <div class="card">
                 <span class="discount-tag">Upto 30%</span>
                 <img src="img/polo2.png" alt="Kaos Polo">
@@ -56,7 +56,7 @@
             </div>
             </a>
 
-             <a href="detail.html">
+             <a href="detail.php">
                 <div class="card">
                     <img src="img/polo1.png" alt="Kaos Polo">
                     <div class="product-title">Kaos Polo</div>
@@ -66,7 +66,7 @@
                 </div>
             </a>
 
-           <a href="detail.html">
+           <a href="detail.php">
                  <div class="card">
                 <span class="discount-tag">Upto 30%</span>
                 <img src="img/polo2.png" alt="Kaos Polo">
@@ -78,7 +78,7 @@
             </div>
             </a>
 
-           <a href="detail.html">
+           <a href="detail.php">
                 <div class="card">
                     <img src="img/polo1.png" alt="Kaos Polo">
                     <div class="product-title">Kaos Polo</div>
@@ -88,7 +88,7 @@
                 </div>
             </a>
 
-           <a href="detail.html">
+           <a href="detail.php">
                  <div class="card">
                 <span class="discount-tag">Upto 30%</span>
                 <img src="img/polo2.png" alt="Kaos Polo">
@@ -100,7 +100,7 @@
             </div>
             </a>
 
-             <a href="detail.html">
+             <a href="detail.php">
                 <div class="card">
                     <img src="img/polo1.png" alt="Kaos Polo">
                     <div class="product-title">Kaos Polo</div>
@@ -110,7 +110,7 @@
                 </div>
             </a>
 
-            <a href="detail.html">
+            <a href="detail.php">
                  <div class="card">
                 <span class="discount-tag">Upto 30%</span>
                 <img src="img/polo2.png" alt="Kaos Polo">
@@ -122,7 +122,7 @@
             </div>
             </a>
 
-            <a href="detail.html">
+            <a href="detail.php">
                 <div class="card">
                     <img src="img/polo1.png" alt="Kaos Polo">
                     <div class="product-title">Kaos Polo</div>
@@ -132,7 +132,7 @@
                 </div>
             </a>
 
-            <a href="detail.html">
+            <a href="detail.php">
                  <div class="card">
                 <span class="discount-tag">Upto 30%</span>
                 <img src="img/polo2.png" alt="Kaos Polo">
@@ -144,7 +144,7 @@
             </div>
             </a>
 
-            <a href="detail.html">
+            <a href="detail.php">
                 <div class="card">
                     <img src="img/polo1.png" alt="Kaos Polo">
                     <div class="product-title">Kaos Polo</div>
@@ -154,7 +154,7 @@
                 </div>
             </a>
 
-           <a href="detail.html">
+           <a href="detail.php">
                  <div class="card">
                 <span class="discount-tag">Upto 30%</span>
                 <img src="img/polo2.png" alt="Kaos Polo">
@@ -166,7 +166,7 @@
             </div>
             </a>
 
-            <a href="detail.html">
+            <a href="detail.php">
                 <div class="card">
                     <img src="img/polo1.png" alt="Kaos Polo">
                     <div class="product-title">Kaos Polo</div>
