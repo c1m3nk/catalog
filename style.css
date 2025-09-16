@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.body {
+  position: relative; 
+}
+
 /* navbar */
 nav {
   display: flex;
@@ -12,9 +16,12 @@ nav {
   background-color: #948979;
   height: 100px;
   align-items: center;
-  position: fixed;
   width: 100%;
-  z-index: 9999;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 nav .element {
@@ -200,8 +207,7 @@ nav .title h1 {
 
 /* SHALL */
 
-.container {
-  max-width: 1200px;
+.container-shall {
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -266,8 +272,12 @@ h2 {
 }
 
 .old-price {
-  font-size: 14px;
-  color: #aaa;
+  padding: 3px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #ff0000;
+  color: #ff0000;
   text-decoration: line-through;
   margin-left: 10px;
 }
