@@ -4,7 +4,7 @@
     </div>
     <div class="element">
       <ul>
-        <li><a href="home.php">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a href="#">About us</a></li>
         <li><a href="shall.php">More</a></li>
       </ul>
