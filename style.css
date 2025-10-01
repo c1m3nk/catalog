@@ -5,10 +5,11 @@
 }
 
 body {
-  position: relative; 
+  position: relative;
 }
 
 /* navbar */
+
 nav {
   display: flex;
   justify-content: space-between;
