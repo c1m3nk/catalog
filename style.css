@@ -61,6 +61,7 @@ nav .title h1 {
 }
 
 /* LANDING PAGE */
+
 .hiro {
   background-color: #DFD0B8;
   display: flex;
@@ -105,8 +106,8 @@ nav .title h1 {
 
 .img-box {
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 450px;
+  height: 300px;
 }
 
 .img-box img {

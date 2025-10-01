@@ -1,6 +1,6 @@
 <div class="container-shall">
     <div class="grid">
-        <a href="detail.html">
+        <a href="detail.php">
             <div class="card">
                 <span class="discount-tag">Upto 30%</span>
                 <img src="img/polo2.png" alt="Kaos Polo">
