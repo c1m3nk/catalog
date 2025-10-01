@@ -3,7 +3,7 @@
 <div class="section">
     <div class="img-box">
       <div class="bg-box"></div>
-      <img src="img/cwk.jpg" alt="outfit">
+      <img src="img/cwk.png" alt="outfit">
     </div>
     <div class="text-box">
       <p>Desain simpel dengan bahan yang pas. <br>
