@@ -6,6 +6,7 @@
 
 body {
   position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* navbar */
@@ -82,8 +83,8 @@ nav .title h1 {
 }
 
 .hiro-text h2 {
-  font-size: 3em;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 600;
   margin-bottom: 2rem;
   color: black;
   margin-left: 3rem;
@@ -276,7 +277,7 @@ h2 {
 .old-price {
   padding: 3px;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 7px;
   font-weight: 600;
   border: 1px solid #ff0000;
   color: #ff0000;
