@@ -1,410 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- [Head] start -->
 
 <head>
-  <title>Home | Mantis Bootstrap 5 Admin Template</title>
-  <!-- [Meta] -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Mantis is made using Bootstrap 5 design framework. Download the free admin template & use it for your project.">
-  <meta name="keywords" content="Mantis, Dashboard UI Kit, Bootstrap 5, Admin Template, Admin Dashboard, CRM, CMS, Bootstrap Admin Template">
-  <meta name="author" content="CodedThemes">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Askala Media</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    .sidebar {
+      min-height: 100vh;
+      background-color: #343a40;
+    }
 
-  <!-- [Favicon] icon -->
-  <link rel="icon" href="./assets/images/favicon.svg" type="image/x-icon"> <!-- [Google Font] Family -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" id="main-font-link">
-  <!-- [Tabler Icons] https://tablericons.com -->
-  <link rel="stylesheet" href="./assets/fonts/tabler-icons.min.css">
-  <!-- [Feather Icons] https://feathericons.com -->
-  <link rel="stylesheet" href="./assets/fonts/feather.css">
-  <!-- [Font Awesome Icons] https://fontawesome.com/icons -->
-  <link rel="stylesheet" href="./assets/fonts/fontawesome.css">
-  <!-- [Material Icons] https://fonts.google.com/icons -->
-  <link rel="stylesheet" href="./assets/fonts/material.css">
-  <!-- [Template CSS Files] -->
-  <link rel="stylesheet" href="./assets/css/style.css" id="main-style-link">
-  <link rel="stylesheet" href="./assets/css/style-preset.css">
+    .sidebar .nav-link {
+      color: #fff;
+      padding: 15px 20px;
+    }
 
+    .sidebar .nav-link:hover {
+      background-color: #495057;
+      color: #fff;
+    }
+
+    .sidebar .nav-link.active {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    .main-content {
+      margin-left: 0;
+      padding: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .main-content {
+        margin-left: 250px;
+      }
+    }
+
+    .card-stats {
+      background: linear-gradient(45deg, #007bff, #0056b3);
+      color: white;
+    }
+
+    .card-stats .card-body {
+      padding: 2rem;
+    }
+
+    .sidebar-brand {
+      padding: 20px;
+      text-align: center;
+      background-color: #212529;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+  </style>
 </head>
-<!-- [Head] end -->
-<!-- [Body] Start -->
 
-<body data-pc-preset="preset-1" data-pc-direction="ltr" data-pc-theme="light">
-  <!-- [ Pre-loader ] start -->
-  <div class="loader-bg">
-    <div class="loader-track">
-      <div class="loader-fill"></div>
-    </div>
-  </div>
-  <!-- [ Pre-loader ] End -->
-  <!-- [ Sidebar Menu ] start -->
-  <nav class="pc-sidebar">
-    <div class="navbar-wrapper">
-      <div class="m-header">
-        <a href="index.html" class="b-brand text-primary">
-          <!-- ========   Change your logo from here   ============ -->
-          <!-- <img src="./assets/images/logo-icon.svg" class="img-fluid logo-lg" alt="logo"> -->
-        </a>
-        <img src="./assets/images/logo-icon.svg" class="img-fluid logo-lg" alt="logo">
+<body>
+  <div class="d-flex">
+    <!-- Sidebar -->
+    <nav class="sidebar position-fixed d-none d-md-block" style="width: 250px;">
+      <div class="sidebar-brand">
+        <i class="fas fa-book"></i> Askala Media
       </div>
-      <div class="navbar-content">
-        <ul class="pc-navbar">
-          <li class="pc-item">
-            <a href="index.html" class="pc-link">
-              <span class="pc-micon"><i class="ti ti-dashboard"></i></span>
-              <span class="pc-mtext">Dashboard</span>
-            </a>
-          </li>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link <?= ($page == 'dashboard') ? 'active' : '' ?>" href="?page=dashboard">
+            <i class="fas fa-tachometer-alt me-2"></i> Dashboard
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?= ($page == 'genre') ? 'active' : '' ?>" href="?page=">
+            <i class="fas fa-tags me-2"></i> Kelola Genre
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?= ($page == 'buku') ? 'active' : '' ?>" href="?page=form_product">
+            <i class="fas fa-book me-2"></i> Kelola product
+          </a>
+        </li>
+        <li class="nav-item mt-4">
+          <a class="nav-link" href="../../index.php" target="_blank">
+            <i class="fas fa-external-link-alt me-2"></i> Lihat Website
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="?page=logout">
+            <i class="fas fa-sign-out-alt me-2"></i> Logout
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-          <li class="pc-item pc-caption">
-            <label>UI Components</label>
-            <i class="ti ti-dashboard"></i>
-          </li>
-          <li class="pc-item">
-            <!-- <a href="../elements/bc_typography.html" class="pc-link"> -->
-            <a href="#" class="pc-link">
-              <span class="pc-micon"><i class="ti ti-typography"></i></span>
-              <span class="pc-mtext">Typography</span>
-            </a>
-          </li>
-          <li class="pc-item">
-            <!-- <a href="../elements/bc_color.html" class="pc-link"> -->
-            <a href="#" class="pc-link">
-              <span class="pc-micon"><i class="ti ti-color-swatch"></i></span>
-              <span class="pc-mtext">Color</span>
-            </a>
-          </li>
-          <li class="pc-item">
-            <!-- <a href="../elements/icon-tabler.html" class="pc-link"> -->
-            <a href="#" class="pc-link">
-              <span class="pc-micon"><i class="ti ti-plant-2"></i></span>
-              <span class="pc-mtext">Icons</span>
-            </a>
-          </li>
+    <!-- Mobile menu button -->
+    <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar">
+      <i class="fas fa-bars"></i>
+    </button>
 
-        </ul>
-
+    <!-- Mobile sidebar -->
+    <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="mobileSidebar">
+      <div class="offcanvas-header bg-dark text-white">
+        <h5 class="offcanvas-title">Aksara Jenggala</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
       </div>
-    </div>
-  </nav>
-  <!-- [ Sidebar Menu ] end --> <!-- [ Header Topbar ] start -->
-  <header class="pc-header">
-    <div class="header-wrapper"> <!-- [Mobile Media Block] start -->
-      <div class="me-auto pc-mob-drp">
-        <ul class="list-unstyled">
-          <!-- ======= Menu collapse Icon ===== -->
-          <li class="pc-h-item pc-sidebar-collapse">
-            <a href="#" class="pc-head-link ms-0" id="sidebar-hide">
-              <i class="ti ti-menu-2"></i>
+      <div class="offcanvas-body bg-dark">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="?page=dashboard">
+              <i class="fas fa-tachometer-alt me-2"></i> Dashboard
             </a>
           </li>
-          <li class="pc-h-item pc-sidebar-popup">
-            <a href="#" class="pc-head-link ms-0" id="mobile-collapse">
-              <i class="ti ti-menu-2"></i>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="?page=form_kategori">
+              <i class="fas fa-tags me-2"></i> Kelola Genre
             </a>
           </li>
-          <li class="dropdown pc-h-item d-inline-flex d-md-none">
-            <a
-              class="pc-head-link dropdown-toggle arrow-none m-0"
-              data-bs-toggle="dropdown"
-              href="#"
-              role="button"
-              aria-haspopup="false"
-              aria-expanded="false">
-              <i class="ti ti-search"></i>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="?page=buku">
+              <i class="fas fa-book me-2"></i> Kelola Buku
             </a>
-            <div class="dropdown-menu pc-h-dropdown drp-search">
-              <form class="px-3">
-                <div class="form-group mb-0 d-flex align-items-center">
-                  <i data-feather="search"></i>
-                  <input type="search" class="form-control border-0 shadow-none" placeholder="Search here. . .">
-                </div>
-              </form>
-            </div>
           </li>
-          <li class="pc-h-item d-none d-md-inline-flex">
-            <form class="header-search">
-              <i data-feather="search" class="icon-search"></i>
-              <input type="search" class="form-control" placeholder="Search here. . .">
-            </form>
-          </li>
-        </ul>
-      </div>
-      <!-- [Mobile Media Block end] -->
-      <div class="ms-auto">
-        <ul class="list-unstyled">
-          <li class="dropdown pc-h-item">
-            <a
-              class="pc-head-link dropdown-toggle arrow-none me-0"
-              data-bs-toggle="dropdown"
-              href="#"
-              role="button"
-              aria-haspopup="false"
-              aria-expanded="false">
-              <i class="ti ti-mail"></i>
+          <li class="nav-item mt-4">
+            <a class="nav-link text-white" href="index.php" target="_blank">
+              <i class="fas fa-external-link-alt me-2"></i> Lihat Website
             </a>
-            <div class="dropdown-menu dropdown-notification dropdown-menu-end pc-h-dropdown">
-              <div class="dropdown-header d-flex align-items-center justify-content-between">
-                <h5 class="m-0">Message</h5>
-                <a href="#!" class="pc-head-link bg-transparent"><i class="ti ti-x text-danger"></i></a>
-              </div>
-              <div class="dropdown-divider"></div>
-              <div class="dropdown-header px-0 text-wrap header-notification-scroll position-relative" style="max-height: calc(100vh - 215px)">
-                <div class="list-group list-group-flush w-100">
-                  <a class="list-group-item list-group-item-action">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img src="../assets/images/user/avatar-2.jpg" alt="user-image" class="user-avtar">
-                      </div>
-                      <div class="flex-grow-1 ms-1">
-                        <span class="float-end text-muted">3:00 AM</span>
-                        <p class="text-body mb-1">It's <b>Cristina danny's</b> birthday today.</p>
-                        <span class="text-muted">2 min ago</span>
-                      </div>
-                    </div>
-                  </a>
-                  <a class="list-group-item list-group-item-action">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img src="../assets/images/user/avatar-1.jpg" alt="user-image" class="user-avtar">
-                      </div>
-                      <div class="flex-grow-1 ms-1">
-                        <span class="float-end text-muted">6:00 PM</span>
-                        <p class="text-body mb-1"><b>Aida Burg</b> commented your post.</p>
-                        <span class="text-muted">5 August</span>
-                      </div>
-                    </div>
-                  </a>
-                  <a class="list-group-item list-group-item-action">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img src="../assets/images/user/avatar-3.jpg" alt="user-image" class="user-avtar">
-                      </div>
-                      <div class="flex-grow-1 ms-1">
-                        <span class="float-end text-muted">2:45 PM</span>
-                        <p class="text-body mb-1"><b>There was a failure to your setup.</b></p>
-                        <span class="text-muted">7 hours ago</span>
-                      </div>
-                    </div>
-                  </a>
-                  <a class="list-group-item list-group-item-action">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img src="../assets/images/user/avatar-4.jpg" alt="user-image" class="user-avtar">
-                      </div>
-                      <div class="flex-grow-1 ms-1">
-                        <span class="float-end text-muted">9:10 PM</span>
-                        <p class="text-body mb-1"><b>Cristina Danny </b> invited to join <b> Meeting.</b></p>
-                        <span class="text-muted">Daily scrum meeting time</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="dropdown-divider"></div>
-              <div class="text-center py-2">
-                <a href="#!" class="link-primary">View all</a>
-              </div>
-            </div>
           </li>
-          <li class="dropdown pc-h-item header-user-profile">
-            <a
-              class="pc-head-link dropdown-toggle arrow-none me-0"
-              data-bs-toggle="dropdown"
-              href="#"
-              role="button"
-              aria-haspopup="false"
-              data-bs-auto-close="outside"
-              aria-expanded="false">
-              <img src="../assets/images/user/avatar-2.jpg" alt="user-image" class="user-avtar">
-              <span>Stebin Ben</span>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="admin.php?page=logout">
+              <i class="fas fa-sign-out-alt me-2"></i> Logout
             </a>
-            <div class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown">
-              <div class="dropdown-header">
-                <div class="d-flex mb-1">
-                  <div class="flex-shrink-0">
-                    <img src="../assets/images/user/avatar-2.jpg" alt="user-image" class="user-avtar wid-35">
-                  </div>
-                  <div class="flex-grow-1 ms-3">
-                    <h6 class="mb-1">Stebin Ben</h6>
-                    <span>UI/UX Designer</span>
-                  </div>
-                  <a href="#!" class="pc-head-link bg-transparent"><i class="ti ti-power text-danger"></i></a>
-                </div>
-              </div>
-              <ul class="nav drp-tabs nav-fill nav-tabs" id="mydrpTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link active"
-                    id="drp-t1"
-                    data-bs-toggle="tab"
-                    data-bs-target="#drp-tab-1"
-                    type="button"
-                    role="tab"
-                    aria-controls="drp-tab-1"
-                    aria-selected="true"><i class="ti ti-user"></i> Profile</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="drp-t2"
-                    data-bs-toggle="tab"
-                    data-bs-target="#drp-tab-2"
-                    type="button"
-                    role="tab"
-                    aria-controls="drp-tab-2"
-                    aria-selected="false"><i class="ti ti-settings"></i> Setting</button>
-                </li>
-              </ul>
-              <div class="tab-content" id="mysrpTabContent">
-                <div class="tab-pane fade show active" id="drp-tab-1" role="tabpanel" aria-labelledby="drp-t1" tabindex="0">
-                  <a href="#!" class="dropdown-item">
-                    <i class="ti ti-edit-circle"></i>
-                    <span>Edit Profile</span>
-                  </a>
-                  <a href="#!" class="dropdown-item">
-                    <i class="ti ti-user"></i>
-                    <span>View Profile</span>
-                  </a>
-                  <a href="#!" class="dropdown-item">
-                    <i class="ti ti-clipboard-list"></i>
-                    <span>Social Profile</span>
-                  </a>
-                  <a href="#!" class="dropdown-item">
-                    <i class="ti ti-wallet"></i>
-                    <span>Billing</span>
-                  </a>
-                  <a href="#!" class="dropdown-item">
-                    <i class="ti ti-power"></i>
-                    <span>Logout</span>
-                  </a>
-                </div>
-                <div class="tab-pane fade" id="drp-tab-2" role="tabpanel" aria-labelledby="drp-t2" tabindex="0">
-                  <a href="#!" class="dropdown-item">
-                    <i class="ti ti-help"></i>
-                    <span>Support</span>
-                  </a>
-                  <a href="#!" class="dropdown-item">
-                    <i class="ti ti-user"></i>
-                    <span>Account Settings</span>
-                  </a>
-                  <a href="#!" class="dropdown-item">
-                    <i class="ti ti-lock"></i>
-                    <span>Privacy Center</span>
-                  </a>
-                  <a href="#!" class="dropdown-item">
-                    <i class="ti ti-messages"></i>
-                    <span>Feedback</span>
-                  </a>
-                  <a href="#!" class="dropdown-item">
-                    <i class="ti ti-list"></i>
-                    <span>History</span>
-                  </a>
-                </div>
-              </div>
-            </div>
           </li>
         </ul>
       </div>
     </div>
-  </header>
-  <!-- [ Header ] end -->
 
-
-
-  <!-- [ Main Content ] start -->
-  <div class="pc-container">
-    <div class="pc-content">
-      <!-- [ breadcrumb ] start >
-      <div class="page-header">
-        <div class="page-block">
-          <div class="row align-items-center">
-            <div class="col-md-12">
-              <div class="page-header-title">
-                <h5 class="m-b-10">Home</h5>
-              </div>
-              <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="../dashboard/index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="javascript: void(0)">Dashboard</a></li>
-                <li class="breadcrumb-item" aria-current="page">Home</li>
+    <!-- Main content -->
+    <main class="main-content flex-fill">
+      <!-- Top navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4">
+        <div class="container-fluid">
+          <h4 class="mb-0">Admin Panel</h4>
+          <div class="navbar-nav ms-auto">
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                <i class="fas fa-user"></i> <?php
+                                            echo $_SESSION['admin_username'] ?? 'Admin';
+                                            ?>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="?page=logout">Logout</a></li>
               </ul>
             </div>
           </div>
         </div>
-      </div>
-       [ breadcrumb ] end -->
-      <!-- [ Main Content ] start -->
+      </nav>
 
       <?php
-      include "./admin-page/dashboard.php"
+      require_once(__DIR__ . '/../../route/admin.php');
       ?>
-
-    </div>
+    </main>
   </div>
-  <!-- [ Main Content ] end -->
-  <footer class="pc-footer">
-    <div class="footer-wrapper container-fluid">
-      <div class="row">
-        <div class="col-sm my-1">
-          <p class="m-0">Mantis &#9829; crafted by Team <a href="https://themeforest.net/user/codedthemes" target="_blank">Codedthemes</a> Distributed by <a href="https://themewagon.com/">ThemeWagon</a>.</p>
-        </div>
-        <div class="col-auto my-1">
-          <ul class="list-inline footer-link mb-0">
-            <li class="list-inline-item"><a href="../index.html">Home</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
 
-  <!-- [Page Specific JS] start -->
-  <script src="./assets/js/plugins/apexcharts.min.js"></script>
-  <script src="./assets/js/pages/dashboard-default.js"></script>
-  <!-- [Page Specific JS] end -->
-  <!-- Required Js -->
-  <script src="./assets/js/plugins/popper.min.js"></script>
-  <script src="./assets/js/plugins/simplebar.min.js"></script>
-  <script src="./assets/js/plugins/bootstrap.min.js"></script>
-  <script src="./assets/js/fonts/custom-font.js"></script>
-  <script src="./assets/js/pcoded.js"></script>
-  <script src="./assets/js/plugins/feather.min.js"></script>
-
-
-
-
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    layout_change('light');
+    // Auto hide alerts after 5 seconds
+    setTimeout(function() {
+      const alerts = document.querySelectorAll('.alert');
+      alerts.forEach(alert => {
+        if (alert) {
+          const bsAlert = new bootstrap.Alert(alert);
+          bsAlert.close();
+        }
+      });
+    }, 5000);
+
+    // Confirm delete
+    function confirmDelete(message = 'Apakah Anda yakin ingin menghapus data ini?') {
+      return confirm(message);
+    }
   </script>
-
-
-
-
-  <script>
-    change_box_container('false');
-  </script>
-
-
-
-  <script>
-    layout_rtl_change('false');
-  </script>
-
-
-  <script>
-    preset_change("preset-1");
-  </script>
-
-
-  <script>
-    font_change("Public-Sans");
-  </script>
-
-
-
 </body>
-<!-- [Body] end -->
 
 </html>
