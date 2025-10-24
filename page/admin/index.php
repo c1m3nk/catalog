@@ -64,7 +64,7 @@
     <!-- Sidebar -->
     <nav class="sidebar position-fixed d-none d-md-block" style="width: 250px;">
       <div class="sidebar-brand">
-        <i class="fas fa-book"></i> Askala Media
+        <i class="fas fa-book"></i> Lakistro
       </div>
       <ul class="nav flex-column">
         <li class="nav-item">
