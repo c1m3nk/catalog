@@ -6,7 +6,7 @@
 
 body {
   position: relative;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: poppins, sans-serif;
 }
 
 /* navbar */
@@ -132,8 +132,8 @@ nav .title h1 {
 }
 
 .text-box p {
-  font-size: 1.5em;
-  line-height: 1.6;
+  font-size: 1.7em;
+  line-height: 1.5;
   font-weight: 700;
   color: black;
   margin-left: 10rem;
